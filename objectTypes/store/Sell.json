@@ -1,0 +1,58 @@
+{
+	"name": "Sell",
+	"plugin-id": "Sprite",
+	"sid": 909003803066159,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 406,
+						"height": 350,
+						"originX": 0.49137931034482757,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8938363,
+						"collisionPoly": {
+							"points": [
+								0.007389162561576354,
+								0.005714285714285714,
+								0.14039408866995073,
+								0.005714285714285714,
+								0.9950738916256158,
+								0.2371428571428571,
+								0.9950738916256158,
+								0.30857142857142855,
+								0.7955665024630542,
+								0.9942857142857143,
+								0.2660098522167488,
+								0.9914285714285714,
+								0.0049261083743842365,
+								0.08285714285714285
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 552000465850967,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

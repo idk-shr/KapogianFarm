@@ -1,0 +1,76 @@
+{
+	"name": "LifeBarBGPig",
+	"plugin-id": "Sprite",
+	"sid": 149213246137332,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "PigUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 812367875052651
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 830648302488263
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 94,
+						"height": 20,
+						"originX": 0.5585106382978723,
+						"originY": 0.525,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6971843,
+						"collisionPoly": {
+							"points": [
+								0.06377772378605394,
+								0.1290983606557377,
+								0.949376974072403,
+								0.1290983606557377,
+								0.9858213876644337,
+								0.3012295081967213,
+								0.9858213876644337,
+								0.6799180327868852,
+								0.9475547533928013,
+								0.8778688524590164,
+								0.06377772378605394,
+								0.8778688524590164,
+								0.02733331019402312,
+								0.6799180327868852,
+								0.02733331019402312,
+								0.31844262295081965,
+								0.043733296310436987,
+								0.20655737704918034
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 735973359752220,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

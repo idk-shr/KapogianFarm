@@ -1,0 +1,58 @@
+{
+	"name": "StorePanel",
+	"plugin-id": "Sprite",
+	"sid": 345120856795666,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 378,
+						"height": 294,
+						"originX": 0.49603174603174605,
+						"originY": 0.4965986394557823,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9360440,
+						"collisionPoly": {
+							"points": [
+								0.04497354497354497,
+								0.006802721088435374,
+								0.9206349206349206,
+								0.006802721088435374,
+								0.9947089947089947,
+								0.09183673469387756,
+								0.9126984126984127,
+								0.9931972789115646,
+								0.023809523809523808,
+								0.9591836734693877,
+								0.0026455026455026454,
+								0.8673469387755102,
+								0.0026455026455026454,
+								0.2108843537414966
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 689515220032420,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
