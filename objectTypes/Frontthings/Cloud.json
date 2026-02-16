@@ -1,0 +1,274 @@
+{
+	"name": "Cloud",
+	"plugin-id": "Sprite",
+	"sid": 147155444113118,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "AnimationCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 502001028351359
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 787173399787246
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 98,
+						"height": 59,
+						"originX": 0.413265306122449,
+						"originY": 0.4152542372881356,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9518049,
+						"collisionPoly": {
+							"points": [
+								0.46938775510204084,
+								0.03389830508474576,
+								0.5408163265306123,
+								0.03389830508474576,
+								0.7551020408163265,
+								0.1016949152542373,
+								0.9795918367346939,
+								0.3898305084745763,
+								0.9285714285714286,
+								0.6271186440677966,
+								0.7857142857142857,
+								0.7796610169491526,
+								0.4897959183673469,
+								0.9661016949152542,
+								0.2755102040816326,
+								0.8813559322033898,
+								0,
+								0.6271186440677966,
+								0,
+								0.3220338983050847
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 613400797254706,
+				"name": "Cloud1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 88,
+						"height": 64,
+						"originX": 0.5625,
+						"originY": 0.4453125,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6363006,
+						"collisionPoly": {
+							"points": [
+								0.2840909090909091,
+								0.03125,
+								0.375,
+								0.03125,
+								0.8409090909090909,
+								0.140625,
+								0.9659090909090909,
+								0.296875,
+								0.9772727272727273,
+								0.375,
+								0.9772727272727273,
+								0.640625,
+								0.8522727272727273,
+								0.875,
+								0.6363636363636364,
+								0.96875,
+								0.2386363636363636,
+								0.921875,
+								0.19318181818181818,
+								0.859375,
+								0.03409090909090909,
+								0.5625,
+								0.056818181818181816,
+								0.328125,
+								0.17045454545454544,
+								0.140625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 328096764601365,
+				"name": "Cloud2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 95,
+						"height": 44,
+						"originX": 0.5526315789473685,
+						"originY": 0.3977272727272727,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5041867,
+						"collisionPoly": {
+							"points": [
+								0.3894736842105263,
+								0.06818181818181818,
+								0.6631578947368421,
+								0.06818181818181818,
+								0.9052631578947369,
+								0.2727272727272727,
+								0.968421052631579,
+								0.4772727272727273,
+								0.9473684210526315,
+								0.7954545454545454,
+								0.8421052631578947,
+								0.9545454545454546,
+								0.08421052631578947,
+								0.9090909090909091,
+								0.031578947368421054,
+								0.7727272727272727,
+								0.05263157894736842,
+								0.4545454545454547,
+								0.21052631578947367,
+								0.1590909090909091
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 172781344612038,
+				"name": "Cloud3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 55,
+						"originX": 0.3904109589041096,
+						"originY": 0.44545454545454544,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8953372,
+						"collisionPoly": {
+							"points": [
+								0.5205479452054794,
+								0.05454545454545454,
+								0.6575342465753424,
+								0.05454545454545454,
+								0.7397260273972602,
+								0.10909090909090909,
+								0.9726027397260274,
+								0.490909090909091,
+								0.8356164383561644,
+								0.8545454545454545,
+								0.6027397260273972,
+								0.9636363636363636,
+								0.4657534246575342,
+								0.9636363636363636,
+								0.1232876712328767,
+								0.8909090909090909,
+								0.0273972602739726,
+								0.6909090909090909,
+								0.0410958904109589,
+								0.5272727272727272,
+								0.273972602739726,
+								0.12727272727272726
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 332934977643763,
+				"name": "Cloud4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 88,
+						"height": 52,
+						"originX": 0.5397727272727273,
+						"originY": 0.49038461538461536,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8110960,
+						"collisionPoly": {
+							"points": [
+								0.29545454545454547,
+								0.038461538461538464,
+								0.5795454545454546,
+								0.057692307692307696,
+								0.8863636363636364,
+								0.2692307692307692,
+								0.9545454545454546,
+								0.8269230769230769,
+								0.8636363636363636,
+								0.9423076923076923,
+								0.056818181818181816,
+								0.4423076923076923
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 515167597304907,
+				"name": "Cloud5",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

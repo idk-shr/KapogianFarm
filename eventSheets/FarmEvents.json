@@ -1,0 +1,1820 @@
+{
+	"name": "FarmEvents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "UI_OpenPanel",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 711096413025273
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI Panels",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 754718387488211
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_DailyReport",
+							"sid": 764876449980732,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Stats",
+							"sid": 313298844164846,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Inventory",
+							"sid": 900904241058365,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Header",
+							"sid": 602025334880921,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Photo",
+							"sid": 562065473648176,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Stats",
+							"sid": 187876677690891,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Title",
+							"sid": 933087686765671,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 696322849065107,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Title",
+							"sid": 514593352788996,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Body",
+							"sid": 596264695730247,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Header",
+							"sid": 165105421041838,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_GridBG",
+							"sid": 772440859130232,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Card",
+							"sid": 898029849999182,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 755853004983331,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text3",
+							"sid": 707600662667887,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 949248199465402
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 555777627344448,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_DailyReport",
+							"sid": 326997906974688,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 385932048331297,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Header",
+							"sid": 788251528554530,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 383379335118306,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Photo",
+							"sid": 659940232413192,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Stats",
+							"sid": 734871596657938,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Title",
+							"sid": 357695197046671,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 402072045847341
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 729620896525579,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Stats",
+							"sid": 305812430439352,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Body",
+							"sid": 478700129032751,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Title",
+							"sid": 409910049181596,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 459073331775821
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 615152045961952,
+							"parameters": {
+								"key": 73
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Inventory",
+							"sid": 281661534994185,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Card",
+							"sid": 365108785715188,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_GridBG",
+							"sid": 173099285991090,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Header",
+							"sid": 511277848018854,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 494813477366709,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text3",
+							"sid": 624769221445128,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 357958282338527
+				}
+			],
+			"sid": 215140217440486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 486861154130126
+				}
+			],
+			"actions": [],
+			"sid": 873914108052169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 841773622618428,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "goatHarap",
+					"sid": 799711040560236,
+					"parameters": {
+						"instance-variable": "dir",
+						"value": "int (random (0,5))"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Chicken",
+					"sid": 526464677945362,
+					"parameters": {
+						"instance-variable": "dir",
+						"value": "int (random(0,5))"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Goat",
+					"sid": 578173983806701,
+					"parameters": {
+						"instance-variable": "dir",
+						"value": "int (random(0,5))"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Butterfly",
+					"sid": 790217253452061,
+					"parameters": {
+						"instance-variable": "dir",
+						"value": "int (random(0,5))"
+					}
+				}
+			],
+			"sid": 798080077952372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "goatHarap",
+					"sid": 272370973522753,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "goatHarap",
+					"sid": 587993511435715,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "goatHarap",
+					"sid": 264678825342545,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 402382262404102
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "goatHarap",
+					"sid": 462909772993345,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "goatHarap",
+					"sid": 486023638504075,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "goatHarap",
+					"sid": 385693305100350,
+					"parameters": {
+						"animation": "\"WalkDown\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 695972907293392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "goatHarap",
+					"sid": 298147499899277,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "goatHarap",
+					"sid": 269919187816396,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "goatHarap",
+					"sid": 945663832528060,
+					"parameters": {
+						"animation": "\"WalkUp\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 186204160744122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "goatHarap",
+					"sid": 886326373542475,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "goatHarap",
+					"sid": 153593558784653,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "goatHarap",
+					"sid": 222229588371230,
+					"parameters": {
+						"animation": "\"WalkRight\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 888994935405387
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "goatHarap",
+					"sid": 876270172223453,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "goatHarap",
+					"sid": 946535752979209,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "goatHarap",
+					"sid": 974501966531341,
+					"parameters": {
+						"animation": "\"WalkLeft\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 356541410311391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "goatHarap",
+					"sid": 612759654320224
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 663277701344882,
+					"parameters": {
+						"object-to-create": "LifeBarBG",
+						"layer": "0",
+						"x": "goatHarap.x",
+						"y": "goatHarap.y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 892509105929786,
+					"parameters": {
+						"object-to-create": "LifeBarFill",
+						"layer": "0",
+						"x": "goatHarap.x",
+						"y": "goatHarap.y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LifeBarBG",
+					"sid": 799435539995195,
+					"parameters": {
+						"instance-variable": "AnimalUID",
+						"value": "LifeBarBG.AnimalUID = goatHarap.UID"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LifeBarFill",
+					"sid": 259577905634944,
+					"parameters": {
+						"instance-variable": "AnimalUID",
+						"value": "LifeBarFill.AnimalUID = goatHarap.UID"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarBG",
+					"sid": 143120454961570,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarFill",
+					"sid": 669856513463259,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 141801340556560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 558324615649717
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "LifeBarBG",
+					"sid": 761270174588120,
+					"parameters": {
+						"x": "goatHarap.x - (-5)",
+						"y": "goatHarap.Y - 48"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "LifeBarFill",
+					"sid": 268582231110215,
+					"parameters": {
+						"x": "goatHarap.x -30",
+						"y": "goatHarap.Y -50"
+					}
+				}
+			],
+			"sid": 867345734103408,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 709272993575892,
+							"parameters": {
+								"object": "LifeBarBG"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "LifeBarFill",
+							"sid": 299711261805015,
+							"parameters": {
+								"width": "(goatHarap.LifeCurrent / goatHarap.LifeMax) * 64\r\n"
+							}
+						}
+					],
+					"sid": 314247526761771,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 855704031057403,
+									"parameters": {
+										"object": "goatHarap",
+										"expression": "goatHarap.UID",
+										"comparison": 0,
+										"value": "LifeBarBG.AnimalUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 577060930594727
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 959062866719268,
+							"parameters": {
+								"object": "LifeBarFill"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 405358176499685,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 937634828931860,
+									"parameters": {
+										"object": "goatHarap",
+										"expression": "goatHarap.UID",
+										"comparison": 0,
+										"value": "LifeBarFill.AnimalUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 994509605658358
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Chicken",
+					"sid": 797415889307123,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Chicken",
+					"sid": 774373554740940,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Chicken",
+					"sid": 204840200185809,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 219355029783763
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Chicken",
+					"sid": 645046770171608,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Chicken",
+					"sid": 958285216824009,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Chicken",
+					"sid": 536999652279584,
+					"parameters": {
+						"animation": "\"WalkDown\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 549659298783141
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Chicken",
+					"sid": 310356969743394,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Chicken",
+					"sid": 284327031592384,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Chicken",
+					"sid": 214634028630396,
+					"parameters": {
+						"animation": "\"WalkUp\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 962244513133152
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Chicken",
+					"sid": 405160100446358,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Chicken",
+					"sid": 318852866162290,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Chicken",
+					"sid": 535769858927902,
+					"parameters": {
+						"animation": "\"WalkRight\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 178271561032921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Chicken",
+					"sid": 544112394357563,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Chicken",
+					"sid": 624686844033118,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Chicken",
+					"sid": 899078937901840,
+					"parameters": {
+						"animation": "\"WalkLeft\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 488662983845238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Chicken",
+					"sid": 106022868368955
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarBGChicken",
+					"sid": 729456956438634,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarFillChiken",
+					"sid": 473263901538565,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 520823897019066,
+					"parameters": {
+						"object-to-create": "LifeBarBGChicken",
+						"layer": "0",
+						"x": "Chicken.x",
+						"y": "Chicken.y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 657365816874693,
+					"parameters": {
+						"object-to-create": "LifeBarFillChiken",
+						"layer": "0",
+						"x": "Chicken.x",
+						"y": "Chicken.y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LifeBarBGChicken",
+					"sid": 619470064115182,
+					"parameters": {
+						"instance-variable": "ChikenUID",
+						"value": "LifeBarBGChicken.ChikenUID = Chicken.UID"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "LifeBarFillChiken",
+					"sid": 924063682593082,
+					"parameters": {
+						"instance-variable": "ChikenUID",
+						"value": "LifeBarFillChiken.ChikenUID = Chicken.UID"
+					}
+				}
+			],
+			"sid": 965404869382676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 132868871683345
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "LifeBarBGChicken",
+					"sid": 463408664912110,
+					"parameters": {
+						"x": "Chicken.x - (-6)",
+						"y": "Chicken.Y -38"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "LifeBarFillChiken",
+					"sid": 388967028170011,
+					"parameters": {
+						"x": "Chicken.x - 30",
+						"y": "Chicken.Y - 40"
+					}
+				}
+			],
+			"sid": 285106088863705,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 570143446127359,
+							"parameters": {
+								"object": "LifeBarBGChicken"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "LifeBarFillChiken",
+							"sid": 949251520976828,
+							"parameters": {
+								"width": "(Chicken.LifeCurrent / Chicken.LifeMax) * 64"
+							}
+						}
+					],
+					"sid": 331103581267112,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 611360320248957,
+									"parameters": {
+										"object": "Chicken",
+										"expression": "Chicken.UID",
+										"comparison": 0,
+										"value": "LifeBarBGChicken.ChikenUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 822956660749732
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 902148713380249,
+							"parameters": {
+								"object": "LifeBarFillChiken"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 114197416347798,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 588163576376345,
+									"parameters": {
+										"object": "Chicken",
+										"expression": "Chicken.UID",
+										"comparison": 0,
+										"value": "LifeBarBGChicken.ChikenUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 464912363645143
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 286382214847036,
+					"parameters": {
+						"object": "goatHarap"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 457627108070645,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 868995567134402,
+							"parameters": {
+								"object": "LifeBarBG"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LifeBarBG",
+							"sid": 430834518981741,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 665244011825641,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 276662193841452,
+									"parameters": {
+										"object": "goatHarap",
+										"expression": "goatHarap.UID",
+										"comparison": 0,
+										"value": "LifeBarBG.AnimalUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 729778177905402
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 123866193932182,
+							"parameters": {
+								"object": "goatHarap"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LifeBarFill",
+							"sid": 336139263195963,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 316476944767862,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 222748519137271,
+									"parameters": {
+										"object": "goatHarap",
+										"expression": "goatHarap.UID",
+										"comparison": 0,
+										"value": "LifeBarFill.AnimalUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 167091908903922
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 661207646110686,
+					"parameters": {
+						"object": "goatHarap"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarBG",
+					"sid": 991113297143439,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarFill",
+					"sid": 912970460046451,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 370443669778296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 790521829712205,
+					"parameters": {
+						"object": "Chicken"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 639981668780357,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 917218156658329,
+							"parameters": {
+								"object": "LifeBarBGChicken"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LifeBarBGChicken",
+							"sid": 419489070824517,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 432229239870086,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 130463393208464,
+									"parameters": {
+										"object": "Chicken",
+										"expression": "Chicken.UID",
+										"comparison": 0,
+										"value": "LifeBarBGChicken.ChikenUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 271770795092735
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 724581113310998,
+							"parameters": {
+								"object": "Chicken"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LifeBarFillChiken",
+							"sid": 241492853098475,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 805189321817272
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 635169255025500,
+					"parameters": {
+						"object": "Chicken"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarBGChicken",
+					"sid": 407861914995456,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LifeBarFillChiken",
+					"sid": 150423576484448,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 818272820929239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Goat",
+					"sid": 166280045014213,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Goat",
+					"sid": 527248310739775,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goat",
+					"sid": 556025646110928,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 394518901924498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Goat",
+					"sid": 397261291273128,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Goat",
+					"sid": 166189985469381,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goat",
+					"sid": 966423315124739,
+					"parameters": {
+						"animation": "\"WalkDown\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 116245787511947
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Goat",
+					"sid": 952701426158250,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Goat",
+					"sid": 334862394356645,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goat",
+					"sid": 743431148001749,
+					"parameters": {
+						"animation": "\"WalkUp\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 737808444906554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Goat",
+					"sid": 209850359091389,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Goat",
+					"sid": 793679080117119,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goat",
+					"sid": 159359235047413,
+					"parameters": {
+						"animation": "\"WalkRight\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 837306344762689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Goat",
+					"sid": 129403810460206,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Goat",
+					"sid": 885457197435938,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goat",
+					"sid": 318493889495101,
+					"parameters": {
+						"animation": "\"WalkLeft\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 533218314202242
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 891016674172083,
+					"parameters": {
+						"interval-seconds": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 511418761907529,
+					"parameters": {
+						"object-to-create": "Cloud",
+						"layer": "\"Game\"",
+						"x": "ViewportLeft(\"Game\") - 100",
+						"y": " random(0, LayoutHeight)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cloud",
+					"sid": 867668282041645,
+					"parameters": {
+						"animation": "choose(\"Cloud1\", \"Cloud2\", \"Cloud3\",\"Cloud4\",\"Cloud5\")",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Cloud",
+					"sid": 938956810975556,
+					"parameters": {
+						"speed": "random (20-60)"
+					}
+				}
+			],
+			"sid": 738638421194611,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "Cloud",
+							"sid": 600394406504120
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Cloud",
+							"sid": 760920786184272
+						}
+					],
+					"sid": 746359428330082
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 125647601326916,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 788410969488470,
+					"parameters": {
+						"object-to-create": "Leaves",
+						"layer": "\"Game\"",
+						"x": "random(ViewportLeft(\"Game\"),\r\n                   ViewportRight(\"Game\"))",
+						"y": "ViewportTop(\"Game\") ",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Leaves",
+					"sid": 939817663843414,
+					"parameters": {
+						"animation": "\"LeavesAnim\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Leaves",
+					"sid": 166205261842387,
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 779106323865507,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "Leaves",
+							"sid": 742359079915218
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Leaves",
+							"sid": 176459762635330
+						}
+					],
+					"sid": 840552055657944
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Butterfly",
+					"sid": 719164369783612,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Butterfly",
+					"sid": 532592097495285,
+					"behaviorType": "8Direction"
+				}
+			],
+			"sid": 310201807274597
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Butterfly",
+					"sid": 508179988707539,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Butterfly",
+					"sid": 973041438280025,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 815314173946376
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Butterfly",
+					"sid": 475404859058967,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Butterfly",
+					"sid": 579973642423709,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 478971938694998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Butterfly",
+					"sid": 336701982079884,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Butterfly",
+					"sid": 554774430965723,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 769356636359499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Butterfly",
+					"sid": 821926617532340,
+					"parameters": {
+						"instance-variable": "dir",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Butterfly",
+					"sid": 526762676523632,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 970436991063096
+		}
+	],
+	"sid": 982963318478884
+}

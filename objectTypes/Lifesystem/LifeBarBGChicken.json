@@ -1,0 +1,76 @@
+{
+	"name": "LifeBarBGChicken",
+	"plugin-id": "Sprite",
+	"sid": 146894035100729,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ChikenUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 499217527501555
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 259958341660826
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 613,
+						"height": 122,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9309224,
+						"collisionPoly": {
+							"points": [
+								0.057096247960848286,
+								0.12295081967213115,
+								0.8499184339314845,
+								0.12295081967213115,
+								0.8825448613376835,
+								0.28688524590163933,
+								0.8825448613376835,
+								0.6475409836065574,
+								0.8482871125611745,
+								0.8360655737704918,
+								0.057096247960848286,
+								0.8360655737704918,
+								0.024469820554649267,
+								0.6475409836065574,
+								0.024469820554649267,
+								0.30327868852459017,
+								0.03915171288743882,
+								0.19672131147540983
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 632651507913006,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

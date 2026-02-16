@@ -1,0 +1,9 @@
+{
+	"name": "DR_ConfirmBtn",
+	"plugin-id": "Button",
+	"sid": 427044849985339,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}
