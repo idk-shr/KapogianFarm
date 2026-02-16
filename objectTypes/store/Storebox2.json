@@ -1,0 +1,52 @@
+{
+	"name": "Storebox2",
+	"plugin-id": "Sprite",
+	"sid": 722359097045057,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 173,
+						"height": 173,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 411176,
+						"collisionPoly": {
+							"points": [
+								0.011560693641618497,
+								0.011560693641618497,
+								0.9884393063583815,
+								0.011560693641618497,
+								0.9884393063583815,
+								0.9884393063583815,
+								0.011560693641618497,
+								0.9884393063583815
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 858389738345831,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

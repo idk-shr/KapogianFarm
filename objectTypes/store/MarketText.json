@@ -1,0 +1,10 @@
+{
+	"name": "MarketText",
+	"plugin-id": "Text",
+	"sid": 152740861662943,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

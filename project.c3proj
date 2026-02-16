@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -112,8 +105,7 @@
 			"Sprite",
 			"Mouse",
 			"PanelBase",
-			"Keyboard",
-			"Browser"
+			"Keyboard"
 		],
 		"subfolders": [
 			{
@@ -125,7 +117,8 @@
 				"items": [
 					"Chicken",
 					"goatHarap",
-					"Goat"
+					"Goat",
+					"Pig"
 				],
 				"subfolders": [],
 				"name": "Animals"
@@ -135,7 +128,11 @@
 					"LifeBarBG",
 					"LifeBarBGChicken",
 					"LifeBarFill",
-					"LifeBarFillChiken"
+					"LifeBarFillChiken",
+					"LifeBarBGGoat",
+					"LifeBarFillGoat",
+					"LifeBarFillPig",
+					"LifeBarBGPig"
 				],
 				"subfolders": [],
 				"name": "Lifesystem"
@@ -155,7 +152,9 @@
 				"items": [
 					"Cloud",
 					"Leaves",
-					"Butterfly"
+					"Butterfly",
+					"StoreInteractionZone",
+					"ShopButton"
 				],
 				"subfolders": [],
 				"name": "Frontthings"
@@ -195,18 +194,18 @@
 			},
 			{
 				"items": [
-					"OpntionHead",
-					"BtnConnect",
-					"BtnExit",
-					"BtnOption",
-					"BtnPlay",
-					"LandingPageBG",
-					"OpstionApply",
-					"OptionBack",
-					"OptionBg"
+					"StorePanel",
+					"CloseButton",
+					"MarketText",
+					"Storebox",
+					"Storebox2",
+					"Buy",
+					"Sell",
+					"Storebox3",
+					"TradeText"
 				],
 				"subfolders": [],
-				"name": "LandingPage"
+				"name": "store"
 			}
 		]
 	},
@@ -226,15 +225,13 @@
 	},
 	"layouts": {
 		"items": [
-			"LandingPage",
 			"FarmLayout"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"FarmEvents",
-			"LPEvents"
+			"FarmEvents"
 		],
 		"subfolders": []
 	},
