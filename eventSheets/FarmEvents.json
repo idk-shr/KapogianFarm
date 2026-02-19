@@ -3,13 +3,33 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "UI_OpenPanel",
-			"type": "string",
-			"initialValue": "\"\"",
+			"name": "CowStoreCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 512509834130069
+		},
+		{
+			"eventType": "variable",
+			"name": "ChickenStoreCount",
+			"type": "number",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 711096413025273
+		},
+		{
+			"eventType": "variable",
+			"name": "GoatStoreCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 990442793880264
 		},
 		{
 			"eventType": "group",
@@ -118,14 +138,6 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Inv_GridBG",
-							"sid": 772440859130232,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "Inv_Card",
 							"sid": 898029849999182,
 							"parameters": {
@@ -150,6 +162,67 @@
 						}
 					],
 					"sid": 949248199465402
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 198179438297437
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_DailyReport",
+							"sid": 806672919112238,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Header",
+							"sid": 742892982982661,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Photo",
+							"sid": 228569188999752,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Stats",
+							"sid": 485023505698888,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Title",
+							"sid": 717119502413852,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 622588884216605,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 128839359481507
 				},
 				{
 					"eventType": "block",
@@ -294,14 +367,6 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Inv_GridBG",
-							"sid": 173099285991090,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "Inv_Header",
 							"sid": 511277848018854,
 							"parameters": {
@@ -326,6 +391,134 @@
 						}
 					],
 					"sid": 357958282338527
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 784235531772468,
+							"parameters": {
+								"key": 67
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Inventory",
+							"sid": 432065081391932,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_DailyReport",
+							"sid": 123711835465668,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Header",
+							"sid": 714479981031618,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Photo",
+							"sid": 142741878037617,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Stats",
+							"sid": 273870214798485,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_Title",
+							"sid": 641669306947984,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DR_ConfirmBtn",
+							"sid": 309717043252493,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Panel_Stats",
+							"sid": 930248090303132,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Title",
+							"sid": 369665192663990,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Stats_Body",
+							"sid": 800658301142473,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Header",
+							"sid": 516414538568791,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Inv_Card",
+							"sid": 139633651794917,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 413259297918696,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text3",
+							"sid": 771509484618170,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 545081990796018
 				}
 			],
 			"sid": 215140217440486
@@ -2687,6 +2880,186 @@
 						"width": "0",
 						"height": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyButton",
+					"sid": 848105908775778,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyText",
+					"sid": 339402275175476,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Tradebutton",
+					"sid": 149532184211351,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "TradeText",
+					"sid": 742057332139313,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Chickenstore",
+					"sid": 226843020053585,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Pigstore",
+					"sid": 226127869364701,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Cowstore",
+					"sid": 891891515900756,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Goatstore",
+					"sid": 665178280100140,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonchicken",
+					"sid": 329622454671883,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonGoat",
+					"sid": 831932921695275,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonCow",
+					"sid": 290710933427559,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonPig",
+					"sid": 556986637676401,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonChicken",
+					"sid": 110910376769165,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonGoat",
+					"sid": 730864636747192,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonCow",
+					"sid": 624617458371815,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonPig",
+					"sid": 604024304536045,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Numberchicken",
+					"sid": 979412951678117,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NumberGoat",
+					"sid": 923067150259101,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NumberCow",
+					"sid": 195915751959771,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NumberPig",
+					"sid": 401467296180474,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
 				}
 			],
 			"sid": 491704337593070
@@ -2774,10 +3147,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "MarketText",
-					"sid": 491681187697100,
+					"sid": 221162543706823,
 					"parameters": {
-						"width": "261",
-						"height": "69"
+						"width": "311",
+						"height": "71"
 					}
 				},
 				{
@@ -2832,6 +3205,132 @@
 					"parameters": {
 						"width": "149",
 						"height": "106"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyButton",
+					"sid": 871294702113271,
+					"parameters": {
+						"width": "194",
+						"height": "84"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyText",
+					"sid": 276807283109867,
+					"parameters": {
+						"width": "151",
+						"height": "77"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Tradebutton",
+					"sid": 109550893563266,
+					"parameters": {
+						"width": "194",
+						"height": "84"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "TradeText",
+					"sid": 532901151828867,
+					"parameters": {
+						"width": "151",
+						"height": "68"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Chickenstore",
+					"sid": 694313131563874,
+					"parameters": {
+						"width": "80",
+						"height": "85"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Pigstore",
+					"sid": 117865943201540,
+					"parameters": {
+						"width": "80",
+						"height": "85"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Cowstore",
+					"sid": 637494744476090,
+					"parameters": {
+						"width": "80",
+						"height": "85"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Goatstore",
+					"sid": 196340094458616,
+					"parameters": {
+						"width": "80",
+						"height": "85"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonChicken",
+					"sid": 678509281104543,
+					"parameters": {
+						"width": "39",
+						"height": "52"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Numberchicken",
+					"sid": 259213130025318,
+					"parameters": {
+						"width": "60",
+						"height": "36"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonchicken",
+					"sid": 212059788540758,
+					"parameters": {
+						"width": "44",
+						"height": "13"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonCow",
+					"sid": 983625636109276,
+					"parameters": {
+						"width": "45",
+						"height": "14"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonCow",
+					"sid": 946229394261286,
+					"parameters": {
+						"width": "39",
+						"height": "45"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NumberCow",
+					"sid": 377981359625262,
+					"parameters": {
+						"width": "61",
+						"height": "36"
 					}
 				}
 			],
@@ -2912,9 +3411,277 @@
 						"width": "0",
 						"height": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyButton",
+					"sid": 170836420019652,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BuyText",
+					"sid": 367745024956810,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Tradebutton",
+					"sid": 820985966918449,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "TradeText",
+					"sid": 524567421474091,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Chickenstore",
+					"sid": 358376547547391,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Pigstore",
+					"sid": 929764079871028,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Cowstore",
+					"sid": 915282852526965,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Goatstore",
+					"sid": 452905549004144,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonchicken",
+					"sid": 977932063432921,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonChicken",
+					"sid": 636979108431536,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Numberchicken",
+					"sid": 231135074603148,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "minusbuttonCow",
+					"sid": 559645481665105,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NumberCow",
+					"sid": 244514266536329,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "AddbuttonCow",
+					"sid": 769758505475344,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
 				}
 			],
 			"sid": 715121789182622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 597672086207352,
+					"parameters": {
+						"object": "AddbuttonChicken"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 176939857022291,
+					"parameters": {
+						"variable": "ChickenStoreCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 821078064069279
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 790924396533061,
+					"parameters": {
+						"object": "minusbuttonchicken"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 723529527276799,
+					"parameters": {
+						"variable": "ChickenStoreCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 706164704118040
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 680380859627827
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Numberchicken",
+					"sid": 870940962975804,
+					"parameters": {
+						"text": "ChickenStoreCount"
+					}
+				}
+			],
+			"sid": 657053277457434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 994748481070760,
+					"parameters": {
+						"object": "AddbuttonCow"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 353674517574826,
+					"parameters": {
+						"variable": "CowStoreCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 593246990385052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 716379752690291,
+					"parameters": {
+						"object": "minusbuttonCow"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 828445214692356,
+					"parameters": {
+						"variable": "CowStoreCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 383164512141239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 165979103955156
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "NumberCow",
+					"sid": 832488153040880,
+					"parameters": {
+						"text": "CowStoreCount"
+					}
+				}
+			],
+			"sid": 305812737586491
 		}
 	],
 	"sid": 982963318478884

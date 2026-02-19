@@ -1,0 +1,106 @@
+{
+	"name": "Pigstore",
+	"plugin-id": "Sprite",
+	"sid": 504487786210769,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "dir",
+			"type": "number",
+			"desc": "Idle",
+			"show": true,
+			"sid": 394857512538703
+		},
+		{
+			"name": "LifeMax",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 302379206066395
+		},
+		{
+			"name": "LifeCurrent",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 559015727912853
+		},
+		{
+			"name": "PigUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 142670693794954
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 744580296758081
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 312606397512305
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 133,
+						"height": 126,
+						"originX": 0.47368421052631576,
+						"originY": 0.45634920634920634,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1357692,
+						"collisionPoly": {
+							"points": [
+								0.3458646616541353,
+								0.031746031746031744,
+								0.9172932330827067,
+								0.03968253968253968,
+								0.9699248120300752,
+								0.11904761904761904,
+								0.9699248120300752,
+								0.6507936507936508,
+								0.8646616541353384,
+								0.9206349206349206,
+								0.8120300751879699,
+								0.9920634920634921,
+								0.18045112781954886,
+								0.9920634920634921,
+								0.13533834586466165,
+								0.9126984126984127,
+								0.03007518796992481,
+								0.6507936507936508,
+								0.022556390977443608,
+								0.1111111111111111,
+								0.07518796992481203,
+								0.047619047619047616
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 889472922546174,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

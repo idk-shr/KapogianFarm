@@ -7,14 +7,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 473061098981469
+					"sid": 602685539825114
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBg",
-					"sid": 799581508879836,
+					"sid": 838732636654212,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -22,7 +22,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpntionHead",
-					"sid": 731325186469937,
+					"sid": 997863219574272,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -30,7 +30,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpstionApply",
-					"sid": 993964135821048,
+					"sid": 802567924197355,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -38,13 +38,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBack",
-					"sid": 940416902720221,
+					"sid": 143253170272004,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 309215280146468
+			"sid": 990380001130377
 		},
 		{
 			"eventType": "block",
@@ -52,7 +52,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 720325350141343,
+					"sid": 878643853527997,
 					"parameters": {
 						"object": "BtnOption"
 					}
@@ -62,7 +62,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnConnect",
-					"sid": 593282879478779,
+					"sid": 549621894434859,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -70,7 +70,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnExit",
-					"sid": 456788445717777,
+					"sid": 598962497751618,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -78,7 +78,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnOption",
-					"sid": 622768003710987,
+					"sid": 517382600220196,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -86,7 +86,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnPlay",
-					"sid": 847438441086347,
+					"sid": 263866889105334,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -94,7 +94,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBg",
-					"sid": 760398556118768,
+					"sid": 248413397002557,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -102,7 +102,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBack",
-					"sid": 380686049872464,
+					"sid": 756083827341570,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -110,7 +110,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpstionApply",
-					"sid": 377855281525542,
+					"sid": 677693611558265,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -118,13 +118,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpntionHead",
-					"sid": 347484900800352,
+					"sid": 341633734848833,
 					"parameters": {
 						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 171235372277161
+			"sid": 935387319999585
 		},
 		{
 			"eventType": "block",
@@ -132,7 +132,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 600561123005224,
+					"sid": 346223045768850,
 					"parameters": {
 						"object": "OpstionApply"
 					}
@@ -142,7 +142,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnConnect",
-					"sid": 725227338996697,
+					"sid": 110083523221750,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -150,7 +150,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnExit",
-					"sid": 621983259281784,
+					"sid": 322680268313558,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -158,7 +158,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnOption",
-					"sid": 461939368783698,
+					"sid": 633044293211958,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -166,7 +166,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnPlay",
-					"sid": 241607251535108,
+					"sid": 379985575132686,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -174,7 +174,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBg",
-					"sid": 256338053876112,
+					"sid": 104881950149439,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -182,7 +182,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBack",
-					"sid": 354608360487688,
+					"sid": 883982162978015,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -190,7 +190,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpstionApply",
-					"sid": 609345638317594,
+					"sid": 186126904482724,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -198,13 +198,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpntionHead",
-					"sid": 255756046718945,
+					"sid": 937657667069561,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 322948651471381
+			"sid": 896812587943577
 		},
 		{
 			"eventType": "block",
@@ -212,7 +212,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 241019304812235,
+					"sid": 882957861350996,
 					"parameters": {
 						"object": "OptionBack"
 					}
@@ -222,7 +222,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnConnect",
-					"sid": 148315447869601,
+					"sid": 357199853398605,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -230,7 +230,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnExit",
-					"sid": 668176329540447,
+					"sid": 116420292073563,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -238,7 +238,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnOption",
-					"sid": 746942058555098,
+					"sid": 559594428369759,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -246,7 +246,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BtnPlay",
-					"sid": 335948892546693,
+					"sid": 324604264297137,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -254,7 +254,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBg",
-					"sid": 813350281114142,
+					"sid": 680317377937789,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -262,7 +262,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OptionBack",
-					"sid": 626244518661548,
+					"sid": 803243005351846,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -270,7 +270,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpstionApply",
-					"sid": 476918439091849,
+					"sid": 886851981627161,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -278,13 +278,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "OpntionHead",
-					"sid": 504176832182951,
+					"sid": 470806536571893,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 295841291819817
+			"sid": 417780807833147
 		},
 		{
 			"eventType": "block",
@@ -292,7 +292,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 606644506322209,
+					"sid": 412720969436728,
 					"parameters": {
 						"object": "BtnPlay"
 					}
@@ -302,13 +302,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 891710497505500,
+					"sid": 390117316401671,
 					"parameters": {
 						"layout": "FarmLayout"
 					}
 				}
 			],
-			"sid": 461571497492545
+			"sid": 481516283193824
 		},
 		{
 			"eventType": "block",
@@ -316,7 +316,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 834768173976408,
+					"sid": 907392013761649,
 					"parameters": {
 						"object": "BtnExit"
 					}
@@ -326,11 +326,11 @@
 				{
 					"id": "close",
 					"objectClass": "Browser",
-					"sid": 646986127774815
+					"sid": 542950568252252
 				}
 			],
-			"sid": 364712918394577
+			"sid": 232232542029655
 		}
 	],
-	"sid": 164279886491085
+	"sid": 701726939669991
 }

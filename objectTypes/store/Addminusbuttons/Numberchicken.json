@@ -1,0 +1,18 @@
+{
+	"name": "Numberchicken",
+	"plugin-id": "Text",
+	"sid": 613600289401407,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "AnimalCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 561316812544391
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
